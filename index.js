@@ -73,8 +73,8 @@ const clientM = new MongoClient(uri, {
 app.get("/makecall", (req, res) => {
     client.calls.create({
         url: "https://sihone.vercel.app/getvoice",
-        to: "+918459781390",
-        from: "+18156230647",
+        to: "+918668732890",
+        from: "+19402046889",
     }).then(call => {
         res.send("{'status':'success'}")
     }).catch((err) => { res.send(`{'status':'fail', err: ${err}}`) });
