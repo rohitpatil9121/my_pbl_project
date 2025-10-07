@@ -72,7 +72,7 @@ const clientM = new MongoClient(uri, {
 
 app.get("/makecall", (req, res) => {
     client.calls.create({
-        url: "https://sihone.vercel.app/getvoice",
+        url: "https://my-pbl-project.vercel.app/getvoice",
         to: "+918668732890",
         from: "+19402046889",
     }).then(call => {
